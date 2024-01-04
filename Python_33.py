@@ -1,11 +1,9 @@
-import math
+def print_items_and_calculate_sum(num_list):
+    print(" ".join(map(str, num_list)))
 
-def calculate_circle_area(radius):
-    area = math.pi * radius**2
-    return area
+    total = sum(num_list)
 
-user_radius = float(input("반지름? "))
+    print(f"합계: {total}")
+num = [15, 25, 33, 17, 88, 25]
 
-circle_area = calculate_circle_area(user_radius)
-
-print("원의 넓이 = {:.1f}".format(circle_area))
+result = print_items_and_calculate_sum(num)
